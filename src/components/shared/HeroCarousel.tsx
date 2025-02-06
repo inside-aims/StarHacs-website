@@ -47,7 +47,7 @@ export function HeroCarousel() {
   }, [nextSlide])
 
   return (
-    <div className="relative h-[400px] md:h-[600px] overflow-hidden">
+    <div className="relative h-[400px] md:h-[600px] overflow-hidden mb-10">
       <AnimatePresence initial={false} custom={currentSlide}>
         {slides.map((slide, index) => (
           <motion.div
