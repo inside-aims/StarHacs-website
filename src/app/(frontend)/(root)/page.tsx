@@ -2,6 +2,7 @@ import { HeroCarousel } from '@/components/shared/HeroCarousel'
 import AboutNewsSection from '@/components/hocs/HomeComponents/AboutNewsSection'
 import React from 'react'
 import { OfferingsSection } from '@/components/hocs/HomeComponents/OfferingSection'
+import WhyStarHacsSection from '@/components/hocs/HomeComponents/WhyStarHacsSection'
 
 
 const HomePage = () => {
@@ -9,6 +10,7 @@ const HomePage = () => {
     <div>
       <HeroCarousel/>
       <AboutNewsSection/>
+      <WhyStarHacsSection/>
       <OfferingsSection/>
     </div>
   )

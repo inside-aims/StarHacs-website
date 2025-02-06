@@ -5,7 +5,7 @@ import { motion } from 'motion/react'
 
 const AboutNewsSection = () => {
   return (
-    <section className="mb-10 flex w-full flex-col gap-10 px-8 py-5 lg:flex-row">
+    <section className="mb-30 flex w-full flex-col gap-30 px-10 py-5 lg:flex-row">
       <div className=' text-start w-full'>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
