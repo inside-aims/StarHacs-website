@@ -4,7 +4,7 @@ import { motion } from "motion/react"
 
 export default function HeroSection() {
   return (
-    <div className="relative h-[50vh] flex items-center">
+    <div className="relative h-[50vh] flex items-center" id="hero">
       <div
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{
