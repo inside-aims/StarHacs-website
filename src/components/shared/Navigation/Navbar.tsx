@@ -15,9 +15,10 @@ const navItems = [
     name: "About Us",
     href: "/about",
     subItems: [
-      { name: "Our History", href: "/about/history" },
-      { name: "Our Team", href: "/about/team" },
-      { name: "Our Mission", href: "/about/mission" },
+      { name: "Our History", href: "/about#history" },
+      { name: "Our Mission", href: "/about#mission" },
+      { name: "Our Vision", href: "/about#vision" },
+      { name: "Our Values", href: "/about#values" },
     ],
   },
   {
@@ -43,7 +44,7 @@ export function Navbar() {
   }
 
   return (
-    <nav className="sticky top-0 z-50 bg-white shadow-sm">
+    <nav className="sticky top-0 z-[998] bg-white shadow-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between p-4">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
