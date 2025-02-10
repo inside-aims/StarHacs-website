@@ -4,7 +4,7 @@ import { Footer } from "@/components/shared/Navigation/Footer";
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <main className="relative min-h-screen bg-gray-100">
+    <main className="relative min-h-screen bg-white">
       <Navbar />
         <section className="min-h-screen">
           {children}
