@@ -25,9 +25,9 @@ const navItems = [
     name: "Academics",
     href: "/academics",
     subItems: [
-      { name: "Curriculum", href: "/academics/curriculum" },
-      { name: "Extracurricular", href: "/academics/extracurricular" },
-      { name: "Faculty", href: "/academics/faculty" },
+      { name: "Pre-School", href: "/academics/pre-school" },
+      { name: "Primary", href: "/academics/primary" },
+     // { name: "Faculty", href: "/academics/faculty" },
     ],
   },
   { name: "News", href: "/news" },
