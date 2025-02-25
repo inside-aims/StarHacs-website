@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { usePathname , useRouter} from "next/navigation"
 import { Menu, ChevronDown } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -38,6 +38,7 @@ const navItems = [
 export function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false)
   const pathname = usePathname()
+  const router = useRouter()
 
   const isActive = (href: string) => {
     return pathname === href || pathname.startsWith(href + "/")
@@ -88,7 +89,7 @@ export function Navbar() {
               )}
             </div>
           ))}
-          <Button>Enrol</Button>
+          <Button onClick={()=> router.push("/application")} className=" cursor-pointer">Apply</Button>
         </div>
 
         {/* Mobile Menu */}
@@ -148,7 +149,7 @@ export function Navbar() {
                   </AccordionItem>
                 ))}
               </Accordion>
-              <Button className="mt-4 w-full">Enrol</Button>
+              <Button onClick={()=> router.push("/application")} className="mt-4 w-full">Apply</Button>
             </nav>
           </SheetContent>
         </Sheet>
