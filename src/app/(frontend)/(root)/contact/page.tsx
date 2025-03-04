@@ -24,7 +24,7 @@ export default function ContactPage() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mx-auto max-w-2xl text-lg text-gray-200"
           >
-            We'd love to hear from you. Get in touch with us.
+            We&apos;d love to hear from you. Get in touch with us.
           </motion.p>
         </div>
         <div className="absolute inset-0 bg-[url('/doodles.svg')] bg-repeat opacity-10" />

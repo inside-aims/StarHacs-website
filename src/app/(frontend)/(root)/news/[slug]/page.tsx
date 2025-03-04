@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Separator } from "@/components/ui/separator"
+import Image from "next/image"
 
 // This would typically come from an API or database
 const newsItem = {
@@ -67,7 +68,7 @@ export default function NewsDetailPage() {
 
           <article className="overflow-hidden rounded-lg bg-white shadow-lg">
             <div className="aspect-video w-full overflow-hidden">
-              <img
+              <Image
                 src={newsItem.imageUrl || "/placeholder.svg"}
                 alt={newsItem.title}
                 className="h-full w-full object-cover"

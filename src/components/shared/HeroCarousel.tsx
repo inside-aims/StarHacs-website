@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 import { AnimatePresence, motion } from "motion/react"
 
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 const slides = [
   {
@@ -58,7 +59,7 @@ export function HeroCarousel() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <img src={slide.image || "/placeholder.svg"} alt={slide.title} className="h-full w-full object-cover" />
+            <Image src={slide.image || "/placeholder.svg"} alt={slide.title} className="h-full w-full object-cover" />
             <div className="absolute inset-0 bg-black/50" />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
               <AnimatePresence mode="wait">
