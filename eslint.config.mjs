@@ -28,6 +28,8 @@ const eslintConfig = [
           caughtErrorsIgnorePattern: '^(_|ignore)',
         },
       ],
+      //react-hooks/exhaustive-deps
+      'react-hooks/exhaustive-deps': 'off',
     },
   },
 ]

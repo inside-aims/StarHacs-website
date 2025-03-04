@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "motion/react"
+import Image from "next/image"
 
 const offerings = [
   {
@@ -56,7 +57,7 @@ export function OfferingsSection() {
           </motion.h2>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {offerings.map((offering, index) => (
+            {offerings.map((offering,_) => (
               <motion.div
                 key={offering.title}
                 initial={{ opacity: 0, y: 20 }}
@@ -66,7 +67,7 @@ export function OfferingsSection() {
                 className="group relative h-64 overflow-hidden rounded-2xl"
               >
                 <div className="absolute inset-0 bg-black/40 transition-opacity group-hover:bg-black/50" />
-                <img
+                <Image
                   src={offering.image || "/placeholder.svg"}
                   alt={offering.title}
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
