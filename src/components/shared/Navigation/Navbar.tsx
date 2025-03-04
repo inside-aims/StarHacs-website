@@ -23,7 +23,7 @@ const navItems = [
   },
   {
     name: "Academics",
-    href: "/academics",
+    href: "#",
     subItems: [
       { name: "Pre-School", href: "/academics/pre-school" },
       { name: "Primary", href: "/academics/primary" },
