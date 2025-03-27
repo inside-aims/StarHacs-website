@@ -12,7 +12,7 @@ const WhyStarHacsSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="mb-10 text-4xl font-bold text-[#0A1B3D]"
+          className="mb-10 text-4xl font-bold text-[#0f9e99]"
         >
           Why Star Hacs ?
         </motion.h2>
@@ -22,15 +22,22 @@ const WhyStarHacsSection = () => {
           whileInView={{ opacity: 1, x: 0, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
+          className="text-left"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dui lacus, posuere id
-          fermentum in, interdum a metus. Pellentesque habitant morbi tristique senectus et netus et
-          malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Illo animi fugiat tempore eius? Quia, alias. Nisi
-          accusamus eligendi debitis deserunt fuga amet, ex dicta omnis dolore praesentium alias
-          quis sint? Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sit, nostrum
-          distinctio ducimus asperiores hic adipisci explicabo a omnis ipsam accusamus architecto
-          eius repellendus deleniti quos quae illum ex sequi?
+          Choosing our institution means embracing a world-class education that blends academic
+          excellence with creativity and innovation. Our well-rounded curriculum ensures that
+          students not only meet rigorous academic standards but also develop the critical thinking
+          and problem-solving skills needed for success. We are committed to technology-driven
+          learning, integrating modern tools and digital literacy into our programs to prepare
+          students for the future. Our innovative teaching methods emphasize interactive and
+          experiential learning, making education both engaging and effective. Beyond academics, we
+          prioritize character development, instilling core values such as integrity, leadership,
+          and social responsibility in every student. We cultivate a supportive community where
+          students, teachers, and parents collaborate, fostering an environment of encouragement and
+          shared success. Furthermore, our global perspective equips students with the skills and
+          knowledge needed to thrive in an interconnected world, empowering them to make meaningful
+          contributions wherever they go. By choosing our institution, students gain more than just
+          an education—they gain the foundation for a future of limitless possibilities.
         </motion.p>
       </div>
     </section>
