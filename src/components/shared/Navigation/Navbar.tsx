@@ -49,7 +49,7 @@ export function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between p-4">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
-          <span className="text-2xl font-bold">Star Hacs</span>
+          <span className="text-2xl font-bold">Star Hacs International School</span>
         </Link>
 
         {/* Desktop Menu */}
