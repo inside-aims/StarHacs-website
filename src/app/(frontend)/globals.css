@@ -19,13 +19,13 @@
 
     --popover-foreground: 240 10% 3.9%;
 
-    --primary: 240 5.9% 10%;
+    --primary: #5C899D;
 
-    --primary-foreground: 0 0% 98%;
+    --primary-foreground: #FFFCEF;
 
-    --secondary: 240 4.8% 95.9%;
+    --secondary: #0F9E99;
 
-    --secondary-foreground: 240 5.9% 10%;
+    --secondary-foreground: #EFE9E0;
 
     --muted: 240 4.8% 95.9%;
 
@@ -71,13 +71,13 @@
 
     --popover-foreground: 0 0% 98%;
 
-    --primary: 0 0% 98%;
+    --primary: #5C899D;
 
-    --primary-foreground: 240 5.9% 10%;
+    --primary-foreground: #FFFCEF;
 
-    --secondary: 240 3.7% 15.9%;
+    --secondary: #0F9E99;
 
-    --secondary-foreground: 0 0% 98%;
+    --secondary-foreground: #EFE9E0;
 
     --muted: 240 3.7% 15.9%;
 
