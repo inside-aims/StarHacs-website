@@ -19,6 +19,7 @@ export default function ValuesSection() {
               src="/assets/images/image-1.webp"
               alt="Values illustration"
               className="rounded-2xl object-cover"
+              fill
             />
           </motion.div>
           <motion.div

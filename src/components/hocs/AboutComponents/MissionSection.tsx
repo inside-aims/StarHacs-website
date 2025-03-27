@@ -19,6 +19,7 @@ export default function MissionSection() {
               src="/assets/images/image-1.webp"
               alt="Mission illustration"
               className="rounded-2xl object-cover"
+             fill
             />
           </motion.div>
           <motion.div
