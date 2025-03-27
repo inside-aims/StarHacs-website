@@ -18,7 +18,6 @@ export default function ValuesSection() {
             <Image
               src="/placeholder.svg?height=600&width=600"
               alt="Values illustration"
-              fill
               className="rounded-2xl object-cover"
               width={300}
               height={300}

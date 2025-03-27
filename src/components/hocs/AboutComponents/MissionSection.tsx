@@ -18,7 +18,6 @@ export default function MissionSection() {
             <Image
               src="/placeholder.svg?height=600&width=600"
               alt="Mission illustration"
-              fill
               className="rounded-2xl object-cover"
               width={300}
               height={300}
