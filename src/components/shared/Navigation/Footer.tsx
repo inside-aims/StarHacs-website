@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from 'next/link'
 
 export function Footer() {
   return (
@@ -6,7 +6,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-8 sm:grid-cols-2 lg:grid-cols-3">
         <div>
           <h3 className="mb-4 font-semibold">Contact Information</h3>
-          <div className="space-y-2 text-sm text-muted-foreground">
+          <div className="text-muted-foreground space-y-2 text-sm">
             <p>Star Hacs</p>
             <p>city, state, zip code</p>
             <p>Email: example@starhacs.com</p>
@@ -16,16 +16,28 @@ export function Footer() {
         <div>
           <h3 className="mb-4 font-semibold">Quick Links</h3>
           <div className="space-y-2 text-sm">
-            <Link href="#" className="block text-muted-foreground transition-colors hover:text-foreground">
+            <Link
+              href="#"
+              className="text-muted-foreground hover:text-foreground block transition-colors"
+            >
               About Us
             </Link>
-            <Link href="#" className="block text-muted-foreground transition-colors hover:text-foreground">
+            <Link
+              href="#"
+              className="text-muted-foreground hover:text-foreground block transition-colors"
+            >
               Admissions
             </Link>
-            <Link href="#" className="block text-muted-foreground transition-colors hover:text-foreground">
+            <Link
+              href="#"
+              className="text-muted-foreground hover:text-foreground block transition-colors"
+            >
               Academic Programs
             </Link>
-            <Link href="#" className="block text-muted-foreground transition-colors hover:text-foreground">
+            <Link
+              href="#"
+              className="text-muted-foreground hover:text-foreground block transition-colors"
+            >
               News & Calendar
             </Link>
           </div>
@@ -33,23 +45,31 @@ export function Footer() {
         <div>
           <h3 className="mb-4 font-semibold">Follow Us</h3>
           <div className="space-y-2 text-sm">
-            <Link href="#" className="block text-muted-foreground transition-colors hover:text-foreground">
+            <Link
+              href="#"
+              className="text-muted-foreground hover:text-foreground block transition-colors"
+            >
               Facebook
             </Link>
-            <Link href="#" className="block text-muted-foreground transition-colors hover:text-foreground">
+            <Link
+              href="#"
+              className="text-muted-foreground hover:text-foreground block transition-colors"
+            >
               Instagram
             </Link>
-            <Link href="#" className="block text-muted-foreground transition-colors hover:text-foreground">
+            <Link
+              href="#"
+              className="text-muted-foreground hover:text-foreground block transition-colors"
+            >
               Twitter
             </Link>
           </div>
         </div>
       </div>
-      <div className="mx-auto mt-8 max-w-7xl text-center text-sm text-muted-foreground">
+      <div className="text-muted-foreground mx-auto mt-8 max-w-7xl text-center text-sm">
         <p>Copyright © 2025 Star Hacs.</p>
         <p>All Rights Reserved</p>
       </div>
     </footer>
   )
 }
-

@@ -1,33 +1,30 @@
-"use client"
+'use client'
 
-import * as React from "react"
-import { ChevronLeft, ChevronRight } from "lucide-react"
-import { AnimatePresence, motion } from "motion/react"
+import * as React from 'react'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { AnimatePresence, motion } from 'motion/react'
 
-import { Button } from "@/components/ui/button"
-import Image from "next/image"
+import { Button } from '@/components/ui/button'
+import Image from 'next/image'
 
 const slides = [
   {
     id: 1,
-    image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-04%20at%2010.14.42%E2%80%AFAM.jpg-DBSpMUKv9TER3sINmHHneW2zx9DLgE.jpeg",
-    title: "Welcome to Star Hacs",
-    description: "Empowering young minds for a brighter future",
+    image: '',
+    title: 'Welcome to Star Hacs',
+    description: 'Empowering young minds for a brighter future',
   },
   {
     id: 2,
-    image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-04%20at%2010.14.42%E2%80%AFAM.jpg-DBSpMUKv9TER3sINmHHneW2zx9DLgE.jpeg",
-    title: "Innovative Learning",
-    description: "Discover our cutting-edge educational programs",
+    image: '',
+    title: 'Innovative Learning',
+    description: 'Discover our cutting-edge educational programs',
   },
   {
     id: 3,
-    image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-04%20at%2010.14.42%E2%80%AFAM.jpg-DBSpMUKv9TER3sINmHHneW2zx9DLgE.jpeg",
-    title: "Join Our Community",
-    description: "Experience a nurturing environment for growth",
+    image: '',
+    title: 'Join Our Community',
+    description: 'Experience a nurturing environment for growth',
   },
 ]
 
@@ -48,7 +45,7 @@ export function HeroCarousel() {
   }, [nextSlide])
 
   return (
-    <div className="relative h-[400px] md:h-[600px] overflow-hidden mb-30">
+    <div className="relative mb-30 h-[400px] overflow-hidden md:h-[600px]">
       <AnimatePresence initial={false} custom={currentSlide}>
         {slides.map((slide, index) => (
           <motion.div
@@ -59,7 +56,13 @@ export function HeroCarousel() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Image src={slide.image || "/placeholder.svg"} alt={slide.title} className="h-full w-full object-cover" />
+            <Image
+              src={slide.image || '/placeholder.svg'}
+              alt={slide.title}
+              className="h-full w-full object-cover"
+              width={300}
+              height={300}
+            />
             <div className="absolute inset-0 bg-black/50" />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
               <AnimatePresence mode="wait">
@@ -93,7 +96,7 @@ export function HeroCarousel() {
       <Button
         variant="ghost"
         size="icon"
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 text-white hover:bg-white/40"
+        className="absolute top-1/2 left-4 -translate-y-1/2 bg-white/20 text-white hover:bg-white/40"
         onClick={prevSlide}
       >
         <ChevronLeft className="h-6 w-6" />
@@ -101,7 +104,7 @@ export function HeroCarousel() {
       <Button
         variant="ghost"
         size="icon"
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 text-white hover:bg-white/40"
+        className="absolute top-1/2 right-4 -translate-y-1/2 bg-white/20 text-white hover:bg-white/40"
         onClick={nextSlide}
       >
         <ChevronRight className="h-6 w-6" />
@@ -109,4 +112,3 @@ export function HeroCarousel() {
     </div>
   )
 }
-
