@@ -117,3 +117,14 @@
     @apply bg-background text-foreground;
   }
 }
+@font-face {
+  font-family: 'Alta';
+  src: url('/assets/fonts/alta-regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-alta {
+  font-family: var(--font-alta), system-ui, sans-serif;
+}
+

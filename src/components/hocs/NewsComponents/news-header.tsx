@@ -1,11 +1,11 @@
-"use client"
+'use client'
 
-import { motion } from "motion/react"
+import { motion } from 'motion/react'
 
 export function NewsHeader() {
   return (
-    <header className="relative bg-[#0A1B3D] py-24 text-white">
-      <div className="container relative z-10 text-center">
+    <header className="relative bg-[#0f9e99] py-24 text-white">
+      <div className="relative z-10 container text-center">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -24,7 +24,7 @@ export function NewsHeader() {
         </motion.p>
       </div>
       <div className="absolute inset-0 bg-[url('/doodles.svg')] bg-repeat opacity-10" />
-      <div className="absolute bottom-0 left-0 right-0">
+      <div className="absolute right-0 bottom-0 left-0">
         <svg
           viewBox="0 0 1440 120"
           className="h-[120px] w-full"
@@ -32,10 +32,12 @@ export function NewsHeader() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path d="M0 120L1440 120L1440 0C1440 0 1040 120 720 120C400 120 0 0 0 0L0 120Z" fill="#f3f4f6" />
+          <path
+            d="M0 120L1440 120L1440 0C1440 0 1040 120 720 120C400 120 0 0 0 0L0 120Z"
+            fill="#efe9e0"
+          />
         </svg>
       </div>
     </header>
   )
 }
-

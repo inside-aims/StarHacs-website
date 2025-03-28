@@ -38,5 +38,10 @@ export function StaffSection() {
       src: '/assets/images/image-1.webp',
     },
   ]
-  return <AnimatedTestimonials testimonials={testimonials} />
+
+  return (
+    <div className="bg-[#0f9e99] px-6 py-12 text-[#efe9e0]">
+      <AnimatedTestimonials testimonials={testimonials} />
+    </div>
+  )
 }

@@ -62,6 +62,9 @@ const config = {
           5: 'hsl(var(--chart-5))',
         },
       },
+      fontFamily: {
+        alta: ['var(--font-alta)'],
+      },
       keyframes: {
         'accordion-down': {
           from: {
