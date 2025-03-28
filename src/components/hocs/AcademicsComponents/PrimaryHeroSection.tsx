@@ -8,7 +8,7 @@ export default function PrimaryHeroSection() {
       {/* Header Section */}
       <header className="bg-white py-10">
         <div className="container text-center">
-          <h1 className="text-4xl font-bold">Academics</h1>
+          <h1 className="text-4xl font-bold text-[#0f9e99]">Academics</h1>
         </div>
       </header>
 
