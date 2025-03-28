@@ -72,6 +72,8 @@ export default function NewsDetailPage() {
                 src={newsItem.imageUrl || "/placeholder.svg"}
                 alt={newsItem.title}
                 className="h-full w-full object-cover"
+                width={300}
+                height={300}
               />
             </div>
 

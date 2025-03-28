@@ -1,10 +1,10 @@
-import { withPayload } from '@payloadcms/next/withPayload'
-
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  // Your Next.js config here
+export default {
   images: {
     remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'hebbkx1anhila5yf.public.blob.vercel-storage.com',
+      },
       {
         protocol: 'https',
         hostname: 'images.unsplash.com',
@@ -12,5 +12,3 @@ const nextConfig = {
     ],
   },
 }
-
-export default withPayload(nextConfig)
