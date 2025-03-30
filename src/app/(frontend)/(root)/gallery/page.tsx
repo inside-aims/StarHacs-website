@@ -6,24 +6,12 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button"
 import { GalleryGrid } from "@/components/hocs/GalleryComponents/gallery-grid"
 import { ImageModal } from "@/components/shared/image-modal"
-
-// Sample image data - in a real app, this would come from an API or CMS
-const preschoolImages = Array.from({ length: 20 }, (_, i) => ({
-  id: `preschool-${i + 1}`,
-  src: `/placeholder.svg?height=400&width=600&text=Preschool+${i + 1}`,
-  alt: `Preschool image ${i + 1}`,
-}))
-
-const primaryImages = Array.from({ length: 20 }, (_, i) => ({
-  id: `primary-${i + 1}`,
-  src: `/placeholder.svg?height=400&width=600&text=Primary+${i + 1}`,
-  alt: `Primary image ${i + 1}`,
-}))
+import { preschoolImages, primaryImages } from "@/constants/images"
 
 export default function GalleryPage() {
   const [activeTab, setActiveTab] = useState("preschool")
-  const [visiblePreschoolImages, setVisiblePreschoolImages] = useState(10)
-  const [visiblePrimaryImages, setVisiblePrimaryImages] = useState(10)
+  const [visiblePreschoolImages, setVisiblePreschoolImages] = useState(12)
+  const [visiblePrimaryImages, setVisiblePrimaryImages] = useState(12)
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
   const handleLoadMore = (section: string) => {
@@ -41,6 +29,19 @@ export default function GalleryPage() {
   const handleCloseModal = () => {
     setSelectedImage(null)
   }
+
+  // Convert imported image objects to the format expected by GalleryGrid
+  const formattedPreschoolImages = preschoolImages.map((img, index) => ({
+    id: `preschool-${index + 1}`,
+    src: img.src,
+    alt: `Preschool image ${index + 1}`,
+  }))
+
+  const formattedPrimaryImages = primaryImages.map((img, index) => ({
+    id: `primary-${index + 1}`,
+    src: img.src,
+    alt: `Primary image ${index + 1}`,
+  }))
 
   return (
     <>
@@ -95,11 +96,11 @@ export default function GalleryPage() {
                 transition={{ duration: 0.3 }}
               >
                 <GalleryGrid
-                  images={preschoolImages.slice(0, visiblePreschoolImages)}
+                  images={formattedPreschoolImages.slice(0, visiblePreschoolImages)}
                   onImageClick={handleImageClick}
                 />
 
-                {visiblePreschoolImages < preschoolImages.length && (
+                {visiblePreschoolImages < formattedPreschoolImages.length && (
                   <div className="mt-8 flex justify-center">
                     <Button onClick={() => handleLoadMore("preschool")} variant="outline" size="lg" className="gap-2">
                       Load More
@@ -116,9 +117,12 @@ export default function GalleryPage() {
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.3 }}
               >
-                <GalleryGrid images={primaryImages.slice(0, visiblePrimaryImages)} onImageClick={handleImageClick} />
+                <GalleryGrid 
+                  images={formattedPrimaryImages.slice(0, visiblePrimaryImages)} 
+                  onImageClick={handleImageClick} 
+                />
 
-                {visiblePrimaryImages < primaryImages.length && (
+                {visiblePrimaryImages < formattedPrimaryImages.length && (
                   <div className="mt-8 flex justify-center">
                     <Button onClick={() => handleLoadMore("primary")} variant="outline" size="lg" className="gap-2">
                       Load More
@@ -133,7 +137,7 @@ export default function GalleryPage() {
 
       {/* Image Modal */}
       <ImageModal isOpen={!!selectedImage} imageUrl={selectedImage || ""} onClose={handleCloseModal} />
-</>
+    </>
   )
 }
 
