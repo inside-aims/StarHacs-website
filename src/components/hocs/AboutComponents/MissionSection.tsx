@@ -16,10 +16,10 @@ export default function MissionSection() {
             className="relative aspect-square"
           >
             <Image
-              src="/assets/images/image-1.webp"
+              src="/assets/images/about/star-hacs-1.1.webp"
               alt="Mission illustration"
               className="rounded-2xl object-cover"
-             fill
+              fill
             />
           </motion.div>
           <motion.div

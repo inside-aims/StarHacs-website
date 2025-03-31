@@ -16,11 +16,11 @@ export default function PrimaryHeroSection() {
         <div
           className="absolute inset-0 z-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url("/placeholder.svg?height=1080&width=1920")',
+            backgroundImage: 'url("/assets/images/primary/knk1.jpeg")',
             backgroundBlendMode: 'overlay',
           }}
         >
-          <div className="absolute inset-0 bg-black/50" />
+          <div className="absolute inset-0 bg-[#0f9e99]/70" />
         </div>
         <div className="z-10 container mx-auto px-4">
           <motion.div
