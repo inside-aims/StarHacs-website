@@ -55,7 +55,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold">Location</h3>
-                  <p className="text-gray-600">123 School Street, City, State, ZIP Code</p>
+                  <p className="text-gray-600">123 School Street, Kosoa, Accra,</p>
                 </div>
               </div>
 
@@ -85,7 +85,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold">Office Hours</h3>
-                  <p className="text-gray-600">Mon-Fri, 8:00 AM - 4:00 PM</p>
+                  <p className="text-gray-600">Mon-Fri, 8:00 AM - 3:00 PM</p>
                 </div>
               </div>
             </div>

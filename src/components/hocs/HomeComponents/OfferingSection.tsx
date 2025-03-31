@@ -3,23 +3,26 @@
 import { motion } from 'motion/react'
 import Image from 'next/image'
 
+import preAllCol8 from "../../../../public/assets/images/pre-school/all-col-party8.jpeg"
+import knk6 from "../../../../public/assets/images/primary/knk6.jpeg"
+import preAllCol4 from "../../../../public/assets/images/pre-school/all-col-party4.jpeg"
+
 const offerings = [
   {
     title: 'Quality Lesson',
     image:
-      'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-04%20at%206.31.11%E2%80%AFPM.jpg-sw88JNiwGwY69yoCCLGencyDlOUJu2.jpeg',
+      knk6,
     delay: 0,
   },
   {
     title: 'Friendly Environment',
-    image:
-      'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-04%20at%206.31.11%E2%80%AFPM.jpg-sw88JNiwGwY69yoCCLGencyDlOUJu2.jpeg',
+    image: preAllCol8,
     delay: 0.2,
   },
   {
-    title: 'Library & Laboratory',
+    title: 'Quality & Caring Tutors',
     image:
-      'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-04%20at%206.31.11%E2%80%AFPM.jpg-sw88JNiwGwY69yoCCLGencyDlOUJu2.jpeg',
+      preAllCol4,
     delay: 0.4,
   },
 ]
@@ -48,7 +51,7 @@ export function OfferingsSection() {
 
       {/* Content section */}
       <div className="bg-[#F5C347] pb-24">
-        <div className="container px-4">
+        <div className="px-4 w-full">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
