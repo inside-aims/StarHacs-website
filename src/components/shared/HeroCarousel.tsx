@@ -3,6 +3,10 @@
 import * as React from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { AnimatePresence, motion } from 'motion/react'
+import preAllCol2 from "../../../public/assets/images/pre-school/all-col-party2.jpeg"
+import preAllCol6 from "../../../public/assets/images/pre-school/all-col-party6.jpeg"
+import priTrad2 from "../../../public/assets/images/primary/ptrad-day2.jpeg"
+
 
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
@@ -10,19 +14,19 @@ import Image from 'next/image'
 const slides = [
   {
     id: 1,
-    image: '',
+    image: preAllCol2,
     title: 'Welcome to Star Hacs',
     description: 'Empowering young minds for a brighter future',
   },
   {
     id: 2,
-    image: '',
+    image: preAllCol6,
     title: 'Innovative Learning',
     description: 'Discover our cutting-edge educational programs',
   },
   {
     id: 3,
-    image: '',
+    image: priTrad2,
     title: 'Join Our Community',
     description: 'Experience a nurturing environment for growth',
   },

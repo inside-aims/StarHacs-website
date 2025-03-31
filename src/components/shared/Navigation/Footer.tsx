@@ -7,35 +7,35 @@ export function Footer() {
         <div>
           <h3 className="mb-4 font-semibold">Contact Information</h3>
           <div className="text-muted-foreground space-y-2 text-sm">
-            <p>Star Hacs</p>
-            <p>city, state, zip code</p>
+            <p>Star Hacs International</p>
+            <p>Kasoa , Accra</p>
             <p>Email: example@starhacs.com</p>
-            <p>Office Hours: M-F, 8:30 AM - 3:30 PM</p>
+            <p>Office Hours: M-F, 8:00 AM - 3:30 PM</p>
           </div>
         </div>
         <div>
           <h3 className="mb-4 font-semibold">Quick Links</h3>
           <div className="space-y-2 text-sm">
             <Link
-              href="#"
+              href="/about"
               className="text-muted-foreground hover:text-foreground block transition-colors"
             >
               About Us
             </Link>
             <Link
-              href="#"
+              href="apply"
               className="text-muted-foreground hover:text-foreground block transition-colors"
             >
               Admissions
             </Link>
             <Link
-              href="#"
+              href="/academics/pre-school"
               className="text-muted-foreground hover:text-foreground block transition-colors"
             >
               Academic Programs
             </Link>
             <Link
-              href="#"
+              href="/news"
               className="text-muted-foreground hover:text-foreground block transition-colors"
             >
               News & Calendar
