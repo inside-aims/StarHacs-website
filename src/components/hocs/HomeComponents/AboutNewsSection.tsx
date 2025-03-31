@@ -3,6 +3,7 @@
 import React from 'react'
 import { motion } from 'motion/react'
 import Image from 'next/image'
+import { images } from '@/constants/images'
 
 const AboutNewsSection = () => {
   return (
@@ -42,7 +43,7 @@ const AboutNewsSection = () => {
         className="h-96 w-full rounded-lg bg-blue-300"
       >
         <Image
-          src={'/assets/images/image-1.webp'}
+          src={images[0]}
           alt={'image'}
           className="h-full w-full rounded-md object-cover transition-transform duration-500 group-hover:scale-110"
           width={300}
