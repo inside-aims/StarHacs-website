@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'motion/react'
+import Image from 'next/image'
 
 export default function PreSchoolHeroSection() {
   return (
@@ -16,7 +17,7 @@ export default function PreSchoolHeroSection() {
         <div
           className="absolute inset-0 z-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url("/assets/images/preschool-1.webp")',
+            backgroundImage: 'url("/assets/images/pre-school/trad-day1.jpeg")',
             backgroundBlendMode: 'overlay',
           }}
         >
@@ -29,6 +30,7 @@ export default function PreSchoolHeroSection() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="mb-4 text-4xl font-bold text-white md:text-6xl">Pre-School</h1>
+
             <p className="max-w-2xl text-xl text-white/90">
               Empowering innovation through technology and collaboration.
             </p>

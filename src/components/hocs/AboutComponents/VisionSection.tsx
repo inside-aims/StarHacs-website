@@ -63,7 +63,7 @@ export default function VisionSection() {
             className="relative aspect-square"
           >
             <Image
-              src="/assets/images/image-1.webp"
+              src="/assets/images/about/star-hacs-2.webp"
               alt="Values illustration"
               fill
               className="rounded-2xl object-cover"
