@@ -55,7 +55,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold">Location</h3>
-                  <p className="text-gray-600">123 School Street, Kosoa, Accra,</p>
+                  <p className="text-gray-600">Sota-Dodowa, Accra,</p>
                 </div>
               </div>
 
@@ -75,7 +75,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold">Email</h3>
-                  <p className="text-gray-600">info@starhacs.edu</p>
+                  <p className="text-gray-600">hacsinternational@gmail.com</p>
                 </div>
               </div>
 
