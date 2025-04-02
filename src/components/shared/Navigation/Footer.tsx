@@ -8,8 +8,8 @@ export function Footer() {
           <h3 className="mb-4 font-semibold">Contact Information</h3>
           <div className="text-muted-foreground space-y-2 text-sm">
             <p>Star Hacs International</p>
-            <p>Kasoa , Accra</p>
-            <p>Email: example@starhacs.com</p>
+            <p>Sota-Dodowa, Accra</p>
+            <p>Email: hacsinternational@gmail.com</p>
             <p>Office Hours: M-F, 8:00 AM - 3:30 PM</p>
           </div>
         </div>
