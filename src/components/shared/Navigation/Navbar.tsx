@@ -2,6 +2,7 @@
 
 import * as React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname, useRouter } from 'next/navigation'
 import { Menu, ChevronDown } from 'lucide-react'
 
@@ -13,6 +14,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion'
+import logo1 from '../../../../public/assets/extras/starhacs.png'
 
 const navItems = [
   { name: 'Home', href: '/' },
@@ -53,8 +55,14 @@ export function Navbar() {
     <nav className="bg-sof sticky top-0 z-[998] bg-[#fffcef] shadow-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between p-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2">
-          <span className="text-2xl font-bold text-[#5c899d]">Star Hacs International School</span>
+        <Link href="/" className="flex items-center space-x-4 ">
+          <Image
+          src={logo1}
+          alt='our logo'
+          width={70}
+          height={70}
+          />
+          <span className="text-2xl font-bold text-[#5c899d] hidden md:flex">Star Hacs International School</span>
         </Link>
 
         {/* Desktop Menu */}
