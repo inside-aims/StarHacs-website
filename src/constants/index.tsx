@@ -9,7 +9,7 @@ export const steps = [
       heading: "Initial Contact",
       content: "Contact our admissions office to begin your application process.",
       contactInfo: {
-        name: "Mrs. Sarah Johnson",
+        name: "Mr. Micheal",
         phone: "+233 (0) 24 308 4874",
       },
       image: "/placeholder.svg?height=600&width=800",
@@ -20,12 +20,12 @@ export const steps = [
       title: "STEP TWO",
       heading: "APPLICATION PROCESS - STEP TWO",
       content:
-        "Fill in a Prospective Student Application Form. You can fill in this form online by pasting the following link in your browser:",
-      formLink: "https://form.jotform.com/202092912928558",
-      contactInfo: {
-        name: "Mrs. Susan Kotei Mensah",
-        phone: "+233 (0) 24 308 4874",
-      },
+        "Currently No online form to fill. Please move on to the next step.",
+      formLink: "",
+      // contactInfo: {
+      //   name: "Mrs. Susan Kotei Mensah",
+      //   phone: "+233 (0) 24 308 4874",
+      // },
       image:
         "/placeholder.svg?height=600&width=800",
     },
