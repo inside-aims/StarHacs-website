@@ -5,6 +5,7 @@ import { Calendar, ArrowRight } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
+import Image from "next/image"
 
 interface NewsCardProps {
   title: string
@@ -26,7 +27,8 @@ export function NewsCard({ title, excerpt, date, category, imageUrl, href, index
     >
       <Card className="group overflow-hidden">
         <div className="aspect-video overflow-hidden">
-          <img
+          <Image
+            layout="fill"
             src={imageUrl || "/placeholder.svg"}
             alt={title}
             className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
