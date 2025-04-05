@@ -65,7 +65,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold">Phone</h3>
-                  <p className="text-gray-600">+233 (0) xx xxx xxxx</p>
+                  <p className="text-gray-600">+233 (0) 54 714 2393</p>
                 </div>
               </div>
 
@@ -93,13 +93,14 @@ export default function ContactPage() {
             {/* Map */}
             <div className="h-[300px] overflow-hidden rounded-lg bg-gray-200">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.9735668288893!2d-0.1870821!3d5.6145642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMzYnNTIuNCJOIDDCsDExJzEzLjUiVw!5e0!3m2!1sen!2sgh!4v1645541234567!5m2!1sen!2sgh"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8394.821154813711!2d-0.07130203442675377!3d5.854109838399843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf7d001456a171%3A0x1923feebeef46fd2!2sStar%20Hacs%20International%20School!5e0!3m2!1sen!2sgh!4v1743771233503!5m2!1sen!2sgh"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
               />
+              {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8394.821154813711!2d-0.07130203442675377!3d5.854109838399843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf7d001456a171%3A0x1923feebeef46fd2!2sStar%20Hacs%20International%20School!5e0!3m2!1sen!2sgh!4v1743771233503!5m2!1sen!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
             </div>
           </motion.div>
 

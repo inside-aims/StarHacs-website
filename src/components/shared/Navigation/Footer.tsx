@@ -1,9 +1,12 @@
 import Link from 'next/link'
+import Image from 'next/image'
+
+import logo1 from "../../../../public/assets/extras/starhacs.png"
 
 export function Footer() {
   return (
     <footer className="bg-gray-200 px-4 py-8">
-      <div className="mx-auto grid max-w-7xl gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mx-auto grid max-w-7xl gap-8 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <h3 className="mb-4 font-semibold">Contact Information</h3>
           <div className="text-muted-foreground space-y-2 text-sm">
@@ -42,7 +45,7 @@ export function Footer() {
             </Link>
           </div>
         </div>
-        <div>
+        <div >
           <h3 className="mb-4 font-semibold">Follow Us</h3>
           <div className="space-y-2 text-sm">
             <Link
@@ -63,6 +66,16 @@ export function Footer() {
             >
               Twitter
             </Link>
+          </div>
+        </div>
+        <div>
+          <div className='max-sm:mx-auto'>
+            <Image
+            src={logo1}
+            alt="our logo"
+            width={250}
+            height={250}
+            />
           </div>
         </div>
       </div>
