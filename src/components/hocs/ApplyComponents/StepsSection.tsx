@@ -28,7 +28,7 @@ const StepsSection = () => {
                 >
                   <span className="flex flex-col items-center gap-2">
                     {step.icon}
-                    <span className="text-xs font-medium max-md:hidden ">{step.title}</span>
+                    <span className="text-xs font-medium max-md:hidden">{step.title}</span>
                   </span>
                 </TabsTrigger>
               ))}
