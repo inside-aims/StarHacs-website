@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-import logo1 from "../../../../public/assets/extras/starhacs.png"
+import logo1 from "../../../../public/assets/extras/bg-removed.png"
 
 export function Footer() {
   return (

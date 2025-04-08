@@ -14,7 +14,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion'
-import logo1 from '../../../../public/assets/extras/starhacs.png'
+import logo1 from '../../../../public/assets/extras/bg-removed.png'
 
 const navItems = [
   { name: 'Home', href: '/' },
@@ -59,8 +59,8 @@ export function Navbar() {
           <Image
           src={logo1}
           alt='our logo'
-          width={70}
-          height={70}
+          width={50}
+          height={50}
           />
           <span className="text-2xl font-bold text-[#5c899d] hidden md:flex">Star Hacs International School</span>
         </Link>
