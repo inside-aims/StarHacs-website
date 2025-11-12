@@ -17,7 +17,7 @@ export const steps = [
     content: 'Contact our admissions office to begin your application process.',
     contactInfo: {
       name: 'Mr. Micheal',
-      phone: '+233 (0) 24 308 4874',
+      phone: '+233 (0) 59 703 4048',
     },
     image: '/assets/images/apply/initial.jpg',
   },
